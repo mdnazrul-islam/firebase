@@ -1,0 +1,30 @@
+name: Firebase Deploy
+
+on:
+  push:
+    branches:
+      - main  # main branch-এ পুশ করার সময় ডিপ্লয় হবে
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Install Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'  # আপনার প্রজেক্টের Node.js ভার্সন অনুসারে পরিবর্তন করুন
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build project
+        run: npm run build  # যদি আপনার অ্যাপে build command থাকে
+
+      - name: Deploy to Firebase
+        run: firebase deploy --only hosting
+        env:
+          FIREBASE_TOKEN: ${{ secrets.03iG1sgRZ1a1FCgYIARAAGAMSNwF-L9Ir_sZ2qiykaGk7nF0ZdAS5guT8m2TTrLnfJullviwdPZVTLRH60g0wQ6fq9p9pJ0yl-1E }
