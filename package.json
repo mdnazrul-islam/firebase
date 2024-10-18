@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build:html": "html-minifier-terser index.html -o build/index.html",
-    "build:js": "uglify-js script.js -o build/script.min.js",
+    "build:js": "uglifyjs script.js -o build/script.min.js", 
     "build:css": "cssnano style.css -o build/style.min.css",
-    "build:prepare": "mkdir -p build", 
+    "build:prepare": "mkdir -p build",
     "build": "npm run build:prepare && npm run build:html && npm run build:js && npm run build:css",
     "test": "jest",
     "serve": "http-server -p 8080"
