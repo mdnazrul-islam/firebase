@@ -1,5 +1,5 @@
 {
-  "name": "Web push",
+  "name": "web push",
   "version": "1.0.0",
   "description": "A brief description of your project",
   "main": "index.js",
@@ -15,7 +15,7 @@
     "type": "git",
     "url": "git+https://github.com/mdnazrul-islam/firebase.git"
   },
-  "author": "Md Nazrul Islam",
+  "author": "Nazrul",
   "license": "MIT",
   "dependencies": {
     "http-server": "^14.1.1" 
