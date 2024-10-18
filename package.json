@@ -1,24 +1,25 @@
 {
   "name": "web-push",
   "version": "1.0.0",
-  "description": "A brief description of your project",
+  "description": "A web push notification project",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "build": "yourbuildcommand"
+    "build": "npm run build",
+    "deploy": "firebase deploy --only hosting"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mdnazrul-islam/firebase.git"
   },
-  "keywords": [],
-  "author": "mdnazrul-islam",
+  "keywords": ["firebase", "web", "push notifications"],
+  "author": "Md Nazrul Islam",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
-    "other-dependency": "^1.0.0"
+    "firebase": "^9.0.0",
+    "express": "^4.17.1"
   },
   "devDependencies": {
-    "some-dev-package": "^1.0.0"
+    "nodemon": "^2.0.0"
   }
 }
