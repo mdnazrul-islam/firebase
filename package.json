@@ -1,23 +1,24 @@
 {
-  "name": "Web push",  // আপনার প্রকল্পের নাম
-  "version": "1.0.0",            // প্রকল্পের ভার্সন
-  "description": "A brief description of your project", // প্রকল্পের বর্ণনা
-  "main": "index.js",            // প্রধান ফাইলের নাম (যদি থাকে)
+  "name": "Web push",
+  "version": "1.0.0",
+  "description": "A brief description of your project",
+  "main": "index.js",
   "scripts": {
-    "start": "node index.js",    // প্রোজেক্ট চালানোর জন্য স্ক্রিপ্ট
-    "build": "your-build-command" // বিল্ড করার জন্য স্ক্রিপ্ট (এখানে আপনার বিল্ড কমান্ড লিখুন)
+    "start": "node index.js",
+    "build": "your-build-command"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mdnazrul-islam/firebase.git" // আপনার রেপোজিটরির URL
+    "url": "git+https://github.com/mdnazrul-islam/firebase.git"
   },
-  "keywords": [],                 // প্রকল্পের কীওয়ার্ডগুলো
-  "author": "Your Name",         // আপনার নাম
-  "license": "ISC",              // লাইসেন্স টাইপ
+  "keywords": [],
+  "author": "Your Name",
+  "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",        // আপনার প্রকল্পের জন্য প্রয়োজনীয় প্যাকেজসমূহ
+    "express": "^4.17.1",
     "other-dependency": "^1.0.0"
   },
   "devDependencies": {
-    "some-dev-package": "^1.0.0" // ডেভেলপমেন্টের জন্য প্রয়োজনীয় প্যাকেজসমূহ
+    "some-dev-package": "^1.0.0"
   }
+}
